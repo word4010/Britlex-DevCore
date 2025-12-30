@@ -1,12 +1,12 @@
 {
-  "name": "Vite_vanilla-app-template",
+  "name": "Britlex-DevCore",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tate-t.github.io/Vite_vanilla-app-template/",
+  "homepage": "https://word4010.github.io/Britlex-DevCore/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Vite_vanilla-app-template/",
+    "build": "vite build --base=/Britlex-DevCore/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
