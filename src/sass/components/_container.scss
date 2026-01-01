@@ -1,0 +1,22 @@
+.container {
+outline: 1px solid red;
+padding: 0 15px;
+margin: 0 auto;
+@media screen and (min-width: 320px) {
+outline: 1px solid black;
+width: 320px;
+}
+@media screen and (min-width: 576px) {
+outline: 1px solid pink;
+width: 576px;}
+@media screen and (min-width: 768px){
+outline: 1px solid Horange;
+width: 768px;}
+@media screen and (min-width: 992px) {
+width: 992;
+outline: 1px solid yellow;}
+@media screen and (min-width: 1600px) {
+outline: 1px solid blue;
+width: 1000px;
+}
+}
