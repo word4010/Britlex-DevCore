@@ -3,12 +3,26 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Britlex-DevCore/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanilla App Template</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/Britlex-DevCore/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Britlex-DevCore/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Britlex-DevCore/favicon-16x16.png">
+  <link rel="manifest" href="/Britlex-DevCore/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Normalize -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         xintegrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet -->
   
   
   <script type="module" crossorigin src="/Britlex-DevCore/assets/index-d5d8ee2b.js"></script>
@@ -28,7 +42,47 @@
         <button class="hero-button">Get started</button>
     </div>
 </section>
-  
+  <section class="skills-section">
+    <div class="container skills-container">
+        <h2 class="title">Skills</h2>
+
+        <ul class="skills-list">
+            <li class="skill-item speaking">
+                <div class="skill-content">
+                    <h3>Speaking</h3>
+                    <p>Improve your English skills and confidence. Live classes and interactive lessons online...</p>
+                    <p class="small-text">Learn English online and improve your skills through our high-quality courses...
+                    </p>
+                    <button class="button skills-btn">Learn more</button>
+                </div>
+            </li>
+
+            <li class="skill-item writing">
+                <div class="skill-content">
+                    <h3>Writing</h3>
+                    <p>One of the most important and extensive areas of natural science...</p>
+                    <button class="button skills-btn">Learn more</button>
+                </div>
+            </li>
+
+            <li class="skill-item reading">
+                <div class="skill-content">
+                    <h3>Reading</h3>
+                    <p>perception and response actions of the user resulting from the use...</p>
+                    <button class="button skills-btn">Learn more</button>
+                </div>
+            </li>
+
+            <li class="skill-item listening">
+                <div class="skill-content">
+                    <h3>Listening</h3>
+                    <p>Here you can find activities to practise your listening skills...</p>
+                    <button class="button skills-btn">Learn more</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
   <section class="about-us" id="about-us">
     <div class="container">
         <h2>About Us</h2>
@@ -62,7 +116,20 @@
 </section>
   
   
-  
+  <footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-logo">
+            Brit<span>lex</span>
+        </div>
+        <nav class="footer-links">
+            <a href="#">Terms and Conditions</a>
+            <span class="separator">•</span>
+            <a href="#">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#">Cookie Policy</a>
+        </nav>
+    </div>
+</footer>
   
 
   
