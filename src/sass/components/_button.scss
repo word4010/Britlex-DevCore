@@ -1,0 +1,42 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: $accent-color;
+    color: $font-color-secondary;
+    font-family: $font-family;
+    font-weight: 500;
+    padding: 14px 48px;
+
+    @media (min-width: 575px) {
+        padding: 14px 54px;
+    }
+
+    @media (min-width: 768px) {
+        font-weight: 400;
+        padding: 14px 42px;
+    }
+
+    @media (min-width: 992px) {
+        font-weight: 400;
+        padding: 18px 42px;
+    }
+
+    @media (min-width: 1600px) {
+        font-weight: 400;
+        padding: 15px 52px;
+    }
+
+    &:hover {
+        background-color: $hover-btn-color;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
