@@ -1,0 +1,26 @@
+.section_title {
+    display: flex;
+    align-items: center;
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 333%;
+    color: $font-color;
+    @media (min-width: 575px) {
+        font-size: 30px;
+        line-height: 267%;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
+    @media (min-width: 992px) {
+        font-size: 36px;
+        line-height: 222%;
+        
+    }
+    @media (min-width: 1600px) {
+        font-size: 48px;
+        line-height: 167%;
+    }
+}
