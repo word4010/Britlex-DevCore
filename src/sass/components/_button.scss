@@ -7,9 +7,9 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: $accent-color;
-    color: $font-color-secondary;
-    font-family: $font-family;
+    background-color: var(--accent-color);
+    color: var(--font-color-secondary);
+    font-family: var(--font-family);
     font-weight: 500;
     padding: 14px 48px;
 
@@ -33,7 +33,7 @@
     }
 
     &:hover {
-        background-color: $hover-btn-color;
+        background-color: var(--hover-btn-color);
     }
 
     &:active {
