@@ -1,10 +1,25 @@
-.pricing{
-padding: 0
-15px;
+
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        
+    }
 }
 
-.pricing_title{
 
+.pricing_title{
+text-align: center;
 font-family: var(--font-family);
 font-weight: 600;
 font-size: 24px;
@@ -13,50 +28,61 @@ color: #000;
 }
 
 .pricing_list{
+    
 }
 
 .pricing_item{
-width: 289px;
-height: 451px;
+text-align: center;
+}
+
+.pricing_item img{
+    margin: 0 auto;
 }
 
 .card_title{
 font-family: var(--font-family);
 font-weight: 600;
-font-size: 30px;
-line-height: 160%;
+font-size: 18px;
+line-height: 156%;
 color: #263238;
-padding-bottom: 17px;
+text-align: center;
+margin-bottom: 25px;
 }
 
 .card_text{
 font-family: var(--font-family);
 font-weight: 400;
-font-size: 20px;
+font-size: 13px;
+text-align: center;
 color: #8f95a5;
-padding-bottom: 33px;
+margin-bottom: 33px;
+
 }
 
 .card_img_test{
 width: 248px;
 height: 248px;
-padding-bottom: 28px;
+
 }
 
 .card_img_lesson{
-
-
+width: 257px;
+height: 200px;
 }
 
 .card_img_webinar{
-
-
-}
-
-.card_price_list{
-
+width: 241px;
+height: 241px;
 }
 
 .card_price{
+text-align: center;
+    margin-bottom: 70px;
+}
 
+.price_discription{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #263238;
 }
