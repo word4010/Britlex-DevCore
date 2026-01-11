@@ -1,12 +1,22 @@
 /*  FOOTER  */
 
 .footer {
+    &::before {
+        content: '';
+            position: absolute;
+            top: 196%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 1px;
+            background-color: var(--border-color);
+    }
 
     .footer-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 64px;
+        margin-top: 57px;
         margin-bottom: 46px;
 
         gap: 20px;
