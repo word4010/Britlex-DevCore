@@ -9,27 +9,31 @@
     border-radius: 5px;
     background-color: var(--accent-color);
     color: var(--font-color-secondary);
-    font-family: var(--font-family);
+    font-family: var(--font-family), sans-serif;
     font-weight: 500;
     padding: 14px 48px;
 
     @media (min-width: 575px) {
         padding: 14px 54px;
+        font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 768px) {
         font-weight: 400;
         padding: 14px 42px;
+        font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 992px) {
         font-weight: 400;
         padding: 18px 42px;
+        font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 1600px) {
         font-weight: 400;
         padding: 15px 52px;
+        font-family: var(--font-family), sans-serif;
     }
 
     &:hover {
