@@ -1,0 +1,85 @@
+.skills-section {
+
+    .title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .skill-item {
+        position: relative;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        padding: 24px 16px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        /*  IMAGE  */
+        &::before {
+            content: '';
+            width: 100%;
+            height: 160px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &.speaking::before {
+            background-image: url('/img/skills/skill-img-1.svg');
+
+        }
+
+        &.writing::before {
+            background-image: url('/img/skills/skill-img-2.svg');
+        }
+
+        &.reading::before {
+            background-image: url('/img/skills/skill-img-3.svg');
+        }
+
+        &.listening::before {
+            margin-bottom: 40px;
+            background-image: url('/img/skills/skill-img-4.svg');
+        }
+
+        .skill-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skill-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .skill-description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .skills-btn {
+            margin-top: 18px;
+            margin-bottom: 30px;
+            align-self: flex-start;
+        }
+    }
+}
+
+/*  TABLET & UP  */
+
+@media (min-width: 768px) {}
+
+/*  DESKTOP PLACEHOLDERS  */
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1600px) {}
