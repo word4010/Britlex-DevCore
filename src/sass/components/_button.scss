@@ -14,13 +14,14 @@
     padding: 14px 48px;
 
     @media (min-width: 575px) {
+        font-weight: 500;
         padding: 14px 54px;
         font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 768px) {
         font-weight: 400;
-        padding: 14px 42px;
+        padding: 16px 42px;
         font-family: var(--font-family), sans-serif;
     }
 
