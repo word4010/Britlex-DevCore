@@ -25,6 +25,11 @@ font-weight: 600;
 font-size: 24px;
 line-height: 333%;
 color: #000;
+
+   @media screen and (min-width: 575px) {
+font-size: 30px;
+line-height: 267%;
+    }
 }
 
 .pricing_list{
@@ -47,6 +52,12 @@ line-height: 156%;
 color: #263238;
 text-align: center;
 margin-bottom: 25px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+line-height: 117%;
+margin-bottom: 27px;
+    }
 }
 
 .card_text{
@@ -57,27 +68,56 @@ text-align: center;
 color: #8f95a5;
 margin-bottom: 33px;
 
+   @media screen and (min-width: 575px) {
+font-weight: 400;
+font-size: 14px;
+margin-bottom: 27px;
+    }
 }
 
 .card_img_test{
 width: 248px;
 height: 248px;
 
+   @media screen and (min-width: 575px) {
+width: 291px;
+height: 291px;
+    }
 }
 
 .card_img_lesson{
 width: 257px;
 height: 200px;
+
+   @media screen and (min-width: 575px) {
+width: 314px;
+height: 241px;
+    }
 }
 
 .card_img_webinar{
 width: 241px;
 height: 241px;
+
+   @media screen and (min-width: 575px) {
+width: 253px;
+height: 253px
+    }
 }
 
 .card_price{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #263238;
 text-align: center;
     margin-bottom: 70px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+margin-bottom: 78px;
+    }
+
 }
 
 .price_discription{
@@ -85,4 +125,12 @@ font-family: var(--font-family);
 font-weight: 400;
 font-size: 18px;
 color: #263238;
+
+   @media screen and (min-width: 575px) {
+font-size: 16px;
+    }
+
+
+
+
 }
