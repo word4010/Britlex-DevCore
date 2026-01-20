@@ -299,6 +299,12 @@
     height: 280px;
   }
 
+  .skills-listening-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
   .speaking {
     height: 100%;
     display: flex;
@@ -330,7 +336,7 @@
   .skill-description {
     width: 100%;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 
   .skills-btn {
