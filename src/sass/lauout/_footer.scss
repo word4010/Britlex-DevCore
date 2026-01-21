@@ -1,65 +1,166 @@
-/*  FOOTER  */
+@use '../utils/varriables' as *;
 
 .footer {
+    padding-top: 58px;
+    padding-bottom: 46px;
+
     &::before {
-        content: '';
-            position: absolute;
-            top: 196%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            height: 1px;
-            background-color: var(--border-color);
+        content: "";
+        display: block;
+        width: 95%;
+        height: 1px;
+        background-color: $border-color;
+        margin: 0 auto;
     }
+}
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 57px;
-        margin-bottom: 46px;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid $border-color;
+    padding-top: 20px;
+}
 
-        gap: 20px;
+.footer-logo {
+    font-family: $font-family;
+    font-size: 24px;
+    color: $font-color;
+    text-decoration: none;
+
+    span {
+        color: $second-font-color;
     }
+}
 
-    .footer-logo {
-        font-family: var(--font-family);
+.separator {
+    color: $text-muted-color;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+
+    a {
+        font-family: $font-family;
         font-weight: 400;
-        font-size: 24px;
-        color: var(--font-color);
-
-        span {
-            color: var(--second-logo-color);
-        }
-    }
-
-    .footer-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1px;
-
-        font-family: var(--font-family);
-        font-weight: 500;
         font-size: 11px;
+        color: $text-muted-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
 
-        a {
-            color: var(--text-muted-color);
-            text-decoration: none;
+        &:hover {
+            color: $accent-color;
         }
 
-        .separator {
-            color: var(--text-muted-color);
+        &:active {
+            color: $accent-color;
+        }
+
+    }
+}
+
+@media (min-width: 575px) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        .footer-logo {
+            font-size: 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 3px;
+            padding: 0;
+            margin: 0;
+            a {
+                font-weight: 500;
+                font-size: 12px;
+            }
+
         }
     }
 }
 
-/*  MEDIA  */
+@media (min-width: 767px) {
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
 
-@media (min-width: 575px) {}
 
-@media (min-width: 767px) {}
+        .footer-links {
+            gap: 5px;
+            padding: 0;
+            margin: 0;
+            a {
+                font-weight: 400;
+                font-size: 13px;
+            }
 
-@media (min-width: 992px) {}
+        }
+    }
+}
 
-@media (min-width: 1600px) {}
+@media (min-width: 992px) {
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+        .footer-logo {
+            font-size: 30px;
+        }
+
+
+        .footer-links {
+            gap: 3px;
+            padding: 0;
+            margin: 0;
+            a {
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .footer {
+        padding-top: 120px;
+        padding-bottom: 64px;
+
+        .footer-logo {
+            font-size: 36px;
+        }
+
+        .separator {
+            font-size: 24px;
+        }
+
+        .footer-links {
+            gap: 5px;
+            a {
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+        }
+    }
+}
