@@ -1,3 +1,5 @@
+@use '../utils/varriables' as *;
+
 /* --- BASE STYLES (320px) --- */
 .skills-section {
   padding: 50px 0;
@@ -20,7 +22,7 @@
 }
 
 .skill-item {
-  background-color: #f5f5f5;
+  background-color: $background-color;
   border-radius: 10px;
   padding: 24px 16px;
 
@@ -62,7 +64,7 @@
 .skill-description {
   font-size: 14px;
   line-height: 1.5;
-  color: var(--secondary-logo-color);
+  color: $text-muted-color;
 }
 
 .skills-btn {
@@ -108,7 +110,6 @@
 
   .skill-description {
     font-size: 12px;
-    color: var(--text-muted-color);
     flex-grow: 1;
   }
 }
@@ -183,7 +184,6 @@
 
     .skill-description {
         font-size: 13px;
-        color: var(--text-muted-color);
         margin-bottom: 16px;
     }
 

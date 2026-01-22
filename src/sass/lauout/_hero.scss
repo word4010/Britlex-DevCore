@@ -1,5 +1,5 @@
-<<<<<<< Updated upstream
-@use '../utils/varriables';
+@use '../utils/varriables' as *;
+
 .hero {
   width: 100%;
   min-height: calc(100vh - 65px);
@@ -127,5 +127,3 @@
     }
   }
 }
-=======
->>>>>>> Stashed changes
