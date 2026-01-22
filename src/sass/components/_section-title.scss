@@ -1,7 +1,9 @@
+@use '../utils/varriables' as *;
+
 .section_title {
     display: flex;
     align-items: center;
-    font-family: var(--font-family);
+    font-family: $font-family;
     font-weight: 600;
     font-size: 24px;
     line-height: 333%;

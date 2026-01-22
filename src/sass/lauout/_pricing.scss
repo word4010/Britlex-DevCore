@@ -1,4 +1,4 @@
-
+@use '../utils/varriables' as *;
 
 .container {
     padding: 0 15px;
@@ -17,6 +17,10 @@
     }
 }
 
+.pricing_markap{
+display: flex;
+flex-direction: row;
+}
 
 .pricing_title{
 text-align: center;
