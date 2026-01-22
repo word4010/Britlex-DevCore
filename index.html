@@ -19,14 +19,14 @@
   
   <!-- Normalize -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-        xintegrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <!-- Main Stylesheet -->
   
   
-  <script type="module" crossorigin src="/Britlex-DevCore/assets/index-b4507722.js"></script>
-  <link rel="stylesheet" href="/Britlex-DevCore/assets/index-c78ad9ca.css">
+  <script type="module" crossorigin src="/Britlex-DevCore/assets/index-cd955294.js"></script>
+  <link rel="stylesheet" href="/Britlex-DevCore/assets/index-c094b859.css">
 </head>
 
 <body>
@@ -54,18 +54,29 @@
 </li>
 </ul>
 <button class="header_button">Let’s Talk</button>
+<button type="button" class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+<svg class="menu__icon" width="24" height="16">
+<use href="/Britlex-DevCore/assets/symbol-defs-e89d588c.svg#icon-burger-menu"></use>
+</svg>
+</button>
 </div>
 </div>
 </section>
-  <section class="hero" id="hero">
-    <div class="container">
-        <h1 class="hero--title"> Learn Any ForeignLanguage</h1>
-        <p class="hero-text">With our teachers who write a program for
-            each student, you will be able to make your
-            first sketch after the first lesson.</p>
-        <button class="hero-button">Get started</button>
+  <section id="hero__section" class="hero__section section">
+    <div class="hero__container container">
+        <div class="hero__content hero__row">
+            <div class="hero__text hero__column">
+                <h1 class="hero__title">Learn Any Foreign Language</h1>
+                <p class="hero__subtitle">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
+                <a href="#" class="button button--get-started">Get started</a>
+            </div>
+            <div class="hero__image hero__column">
+                <img src="../img/hero/hero-bg-img.svg" alt="woman with laptop">
+            </div>
+        </div>
     </div>
 </section>
+
   <section class="skills-section" id="skills">
     <div class="container skills-container">
         <h2 class="section_title skills-title">Skills</h2>
@@ -217,8 +228,8 @@ for only $1
   <div class="menu__container js-menu-container" id="mobile-menu">
 
     <button type="button" class="menu__toggle js-close-menu">
-        <svg class="menu__icon" width="40" height="40" aria-label="Закрити мобільне меню">
-            <use href="./img/symbol-defs.svg#icon-close"></use>
+        <svg class="menu__toggle-icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="/Britlex-DevCore/assets/symbol-defs-e89d588c.svg#icon-close-btn"></use>
         </svg>
     </button>
 
@@ -242,10 +253,10 @@ for only $1
 
     <ul class="menu__contacts--nav">
         <li class="menu__item menu__item--cta">
-            <a href="#" class="menu__link menu__link--cta">Get started</a>
+            <a href="#" class="button menu__link menu__link--cta">Get started</a>
         </li>
         <li class="menu__item menu__item--mail">
-            <a href="mailto:info@britlex.com" class="menu__link menu__link--mail">info@britlex.com</a>
+            <a href="mailto:info@britlex.com" class="menu__link menu__link--mail">info@info@britlex.com</a>
         </li>
     </ul>
 
@@ -264,7 +275,9 @@ for only $1
         </li>
     </ul>
 </div>
+  
 
+  <script defer="" src="./js/mobile-menu.js"></script>
   
 </body>
 
