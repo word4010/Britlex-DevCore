@@ -1,7 +1,6 @@
 @use '../utils/varriables' as *;
-
-.header{
-        display: flex;
+.header_flex{
+    display: flex;
     flex-direction: row;
 align-items: center;
 

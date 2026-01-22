@@ -29,10 +29,27 @@ font-weight: 600;
 font-size: 24px;
 line-height: 333%;
 color: #000;
+
+   @media screen and (min-width: 575px) {
+font-size: 30px;
+line-height: 267%;
+    }
+
+        @media screen and (min-width: 768px) {
+         
+font-size: 30px;
+line-height: 267%;
+        margin-bottom: 31px;
+    }
 }
 
 .pricing_list{
-    
+    @media screen and (min-width: 768px) {
+display: flex;
+flex-direction: row;
+        gap: 43px;
+        align-items: center;
+    }
 }
 
 .pricing_item{
@@ -51,6 +68,90 @@ line-height: 156%;
 color: #263238;
 text-align: center;
 margin-bottom: 25px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+line-height: 117%;
+margin-bottom: 27px;
+    }
+
+        @media screen and (min-width: 768px) {
+       font-size: 20px;
+line-height: 140%;
+margin-bottom: 15px;
+        
+    }
+}
+
+
+
+.card_title_10{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #263238;
+text-align: center;
+
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+line-height: 117%;
+margin-bottom: 27px;
+    }
+
+     @media screen and (min-width: 768px) {
+       font-size: 20px;
+line-height: 140%;
+margin-bottom: 15px;
+padding-top: 40px;
+}
+}
+
+.card_title_2{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #263238;
+text-align: center;
+margin-bottom: 25px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+line-height: 117%;
+margin-bottom: 27px;
+    }
+
+     @media screen and (min-width: 768px) {
+       font-size: 20px;
+line-height: 140%;
+margin-bottom: 15px;
+padding-top: 42px;
+}
+}
+
+.card_title_3{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #263238;
+text-align: center;
+margin-bottom: 25px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+line-height: 117%;
+margin-bottom: 27px;
+    }
+    
+     @media screen and (min-width: 768px) {
+       font-size: 20px;
+line-height: 140%;
+margin-bottom: 15px;
+
+}
 }
 
 .card_text{
@@ -61,27 +162,149 @@ text-align: center;
 color: #8f95a5;
 margin-bottom: 33px;
 
+   @media screen and (min-width: 575px) {
+
+font-size: 14px;
+margin-bottom: 27px;
+    }
+
+        @media screen and (min-width: 768px) {
+       font-size: 14px;
+
+        
+    }
 }
 
 .card_img_test{
 width: 248px;
 height: 248px;
 
+   @media screen and (min-width: 575px) {
+width: 291px;
+height: 291px;
+    }
+
+        @media screen and (min-width: 768px) {
+width: 197px;
+height: 197px;
+
+    }
 }
 
 .card_img_lesson{
 width: 257px;
 height: 200px;
+
+   @media screen and (min-width: 575px) {
+width: 314px;
+height: 241px;
+    }
+
+        @media screen and (min-width: 768px) {
+width: 219px;
+height: 168px;
+    }
 }
 
 .card_img_webinar{
 width: 241px;
 height: 241px;
+
+   @media screen and (min-width: 575px) {
+width: 253px;
+height: 253px
+    }
+
+        @media screen and (min-width: 768px) {
+width: 210px;
+height: 210px
+        
+    }
 }
 
 .card_price{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #263238;
 text-align: center;
     margin-bottom: 70px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+margin-bottom: 78px;
+    }
+
+        @media screen and (min-width: 768px) {
+       font-size: 22px;
+margin-bottom: 72px;
+        
+    }
+
+}
+
+
+.card_price_1{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #263238;
+text-align: center;
+    margin-bottom: 70px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+margin-bottom: 78px;
+    }
+
+        @media screen and (min-width: 768px) {
+       font-size: 22px;
+margin-bottom: 72px;
+        
+    }
+
+}
+
+.card_price_2{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #263238;
+text-align: center;
+    margin-bottom: 70px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+margin-bottom: 78px;
+    }
+
+        @media screen and (min-width: 768px) {
+       font-size: 22px;
+margin-bottom: 72px;
+        
+    }
+
+}
+
+.card_price_3{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #263238;
+text-align: center;
+    margin-bottom: 70px;
+
+   @media screen and (min-width: 575px) {
+font-size: 24px;
+margin-bottom: 78px;
+    }
+
+        @media screen and (min-width: 768px) {
+       font-size: 22px;
+margin-bottom: 72px;
+        
+    }
+
 }
 
 .price_discription{
@@ -89,4 +312,15 @@ font-family: var(--font-family);
 font-weight: 400;
 font-size: 18px;
 color: #263238;
+
+   @media screen and (min-width: 575px) {
+font-size: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+       font-size: 16px;
+        
+    }
+
+
 }
