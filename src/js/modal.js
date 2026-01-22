@@ -1,14 +1,29 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+    const modal = document.getElementById('modal');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+        openModalBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('closing');
+            modal.addEventListener('transitionend', function handler() {
+                modal.classList.add('hidden');
+                modal.classList.remove('closing');
+                modal.removeEventListener('transitionend', handler);
+            });
+        });
+
+        // Закриття при кліку поза модаллю
+        modal.addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                modal.classList.add('closing');
+                modal.addEventListener('transitionend', function handler() {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('closing');
+                    modal.removeEventListener('transitionend', handler);
+                });
+            }
+        });

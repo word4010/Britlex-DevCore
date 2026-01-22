@@ -1,0 +1,212 @@
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    @include flex-center;
+    padding: 1rem;
+    opacity: 1;
+    @include transition-default(opacity, 0.3s, ease-out);
+}
+
+.modal-bg.closing {
+    opacity: 0;
+}
+
+.modal-bg.hidden {
+    @extend %is-hidden;
+}
+
+.modal-content {
+    background-color: $secondary-color;
+    padding: 40px;
+    border-radius: 0.75rem;
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 32rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-out;
+}
+
+.modal-bg:not(.hidden) .modal-content {
+    animation: scaleIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-bg.closing .modal-content {
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $font-color;
+}
+
+.close-btn {
+    color: $second-font-color;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    padding: 0;
+    @include transition-default(color, 0.3s);
+}
+
+.close-btn:hover {
+    color: $accent-color;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $second-font-color;
+    position: relative;
+}
+
+.label-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: $font-color;
+}
+
+.label-accent {
+    position: absolute;
+    transform: translateY(32px) translateX(10px);
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+}
+
+.form-input,
+.form-textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem 0.75rem 0.5rem 40px;
+    border: 1px solid rgba($font-color, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    outline: none;
+    @include transition-default(border-color, 0.2s);
+    @include transition-default(box-shadow, 0.2s);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: $accent-color;
+    box-shadow: 0 0 0 3px rgba(38, 50, 56, 0.5);
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.consent-group {
+    margin: 1.5rem 0;
+    @include flex-center;
+    font-size: 0.875rem;
+}
+
+.consent-group input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    color: $accent-color;
+    border-color: rgba($font-color, 0.2);
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.consent-group label {
+    color: $second-font-color;
+}
+
+.consent-group a {
+    color: $accent-color;
+    font-weight: 500;
+}
+
+.consent-group a:hover {
+    color: $hover-btn-color;
+}
+
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    width: 200px;
+    height: 55px;
+    background-color: $accent-color;
+    color: $font-color-secondary;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.06);
+    border: none;
+    cursor: pointer;
+    @include transition-default(background-color, 0.3s);
+    @include transition-default(transform, 0.2s);
+}
+
+.submit-btn:hover {
+    background-color: $hover-btn-color;
+    @extend %hover-translate-y-2;
+}
+
+.success-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #d1fae5;
+    color: #065f46;
+    border-radius: 0.5rem;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.hidden {
+    @extend %is-hidden;
+}
