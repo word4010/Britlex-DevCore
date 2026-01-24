@@ -1,40 +1,41 @@
+@use '../utils/varriables' as *;
+
 .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: var(--accent-color);
-    color: var(--font-color-secondary);
-    font-family: var(--font-family), sans-serif;
+    background-color: $accent-color;
+    color: $font-color-secondary;
+    font-family: $font-family, sans-serif;
     font-weight: 500;
     padding: 14px 48px;
 
     @media (min-width: 575px) {
         font-weight: 500;
         padding: 14px 54px;
-        font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 768px) {
         font-weight: 400;
         padding: 16px 42px;
-        font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 992px) {
         font-weight: 400;
         padding: 18px 42px;
-        font-family: var(--font-family), sans-serif;
     }
 
     @media (min-width: 1600px) {
         font-weight: 400;
         padding: 15px 52px;
-        font-family: var(--font-family), sans-serif;
     }
 
     &:hover {

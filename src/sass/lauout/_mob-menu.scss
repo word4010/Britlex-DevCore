@@ -1,0 +1,167 @@
+
+@use '../utils/varriables' as *;
+
+body.is-menu-open {
+  overflow: hidden;
+}
+
+// Контейнер меню
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 64px 32px;
+
+  background-color: $secondary-color;
+  z-index: $menu-idx;
+
+  // Початковий стан (сховане справа)
+  transform: translateX(100%);
+  transition: transform $anim-fast;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+// Загальна кнопка
+.menu__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  color: $accent-color;
+}
+
+// Кнопка "Хрестик" (позиціонування)
+.menu__container .menu__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  rotate: 0deg;
+  transition: color $anim-fast, rotate $anim-fast;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $hover-icon-color;
+    rotate: 180deg;
+  }
+
+
+}
+
+// Іконка
+.menu__toggle-icon {
+  fill: currentColor;
+  stroke: currentColor;
+  transition: fill $anim-fast;
+}
+
+// Навігація
+.menu__list--nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 500;
+  color: $font-color;
+  transition: color $anim-fast, border-bottom $anim-fast;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+  }
+
+  &--current {
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+  }
+}
+
+// Контакти та CTA
+.menu__contacts--nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 48px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu__link--cta {
+  display: inline-block;
+  padding: 14px 34px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+
+  background-color: $accent-color;
+  color: $font-color-secondary;
+  border-radius: 4px;
+
+  transition: background-color $anim-fast;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn-color;
+  }
+}
+
+.menu__link--mail {
+  font-size: 18px;
+  color: $text-muted-color;
+  text-decoration: none;
+  text-align: center;
+}
+
+// Соцмережі
+.menu__list--socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.menu__link--socials {
+  text-decoration: none;
+  font-size: 16px;
+  color: $second-font-color;
+  font-weight: 400;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+// Медіа-запит для приховування
+@media screen and (min-width: 992px) {
+  .menu__toggle {
+    display: none;
+  }
+}
+
