@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
+  <title>BritLex</title>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/Britlex-DevCore/apple-touch-icon.png">
@@ -25,8 +25,8 @@
   <!-- Main Stylesheet -->
   
   
-  <script type="module" crossorigin src="/Britlex-DevCore/assets/index-8bea9520.js"></script>
-  <link rel="stylesheet" href="/Britlex-DevCore/assets/index-a2840cb8.css">
+  <script type="module" crossorigin src="/Britlex-DevCore/assets/index-9cabd896.js"></script>
+  <link rel="stylesheet" href="/Britlex-DevCore/assets/index-8be8d054.css">
 </head>
 
 <body>
@@ -67,10 +67,10 @@
             <div class="hero__text hero__column">
                 <h1 class="hero__title">Learn Any Foreign Language</h1>
                 <p class="hero__subtitle">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
-                <a href="#" class="button button--get-started">Get started</a>
+                <a  type="button" id="openModalBtn" class="button button--get-started">Get started</a>
             </div>
             <div class="hero__image hero__column">
-                <img src="../img/hero/hero-bg-img.svg" alt="woman with laptop">
+                <img src="/Britlex-DevCore/assets/hero-bg-img-6bb22259.svg" alt="woman with laptop">
             </div>
         </div>
     </div>
@@ -118,37 +118,36 @@
     </div>
 </section>
 
-  <section class="about-us" id="about-us">
-    <div class="container">
-        <h2>About Us</h2>
-        <p class="about-text">
-            The model offers a framework for discussing problems related to the user's experience, as well as possible
-            ways and means of solving them. Application development begins at the top level (strategy), where the future
-            software product is described quite abstractly from the point of view of the expectations of both users and
-            the customer.
-        </p>
-        <ul class="about-list">
-          <li>
-            <span class="about-accent">
-               800 
-            </span>
-            <p>Pupils</p>
-        </li>
-          <li>
-            <span class="about-accent">
-18
-            </span>
-            <p>Teachers</p>
-        </li>
-          <li>
-            <span class="about-accent">
-6
-            </span>
-            <p>Foreign languages</p>
-        </li>
-        </ul>
-    </div>
-</section>
+    <section id="about-us__section" class="about-us__section section">
+                <div class="about-us__container container">
+                    <div class="about-us__content content">
+                        <h2 class="about-us__title content__title">About Us</h2>
+                        <div class="about-us__row">
+                            <div class="about-us__text about-us__col">
+                                <p>The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
+                                </p>
+                                <ul class="facts-info">
+                                    <li class="fact__item">
+                                        <strong class="fact__title">800</strong>
+                                        <span class="fact__text">Pupils</span>
+                                    </li>
+                                    <li class="fact__item">
+                                        <strong class="fact__title">18</strong>
+                                        <span class="fact__text">Teachers</span>
+                                    </li>
+                                    <li class="fact__item">
+                                        <strong class="fact__title">6</strong>
+                                        <span class="fact__text">Foreign languages</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="about-us__image about-us__col">
+                                <img src="/Britlex-DevCore/assets/about-back-img-0a4c4d59.svg" alt="About us image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
   <section class="pricing" id="pricing">
     <div class="container">
 <h2 class="pricing_title">Pricing</h2>
@@ -274,7 +273,198 @@ for only $1
         </li>
     </ul>
 </div>
+  <!-- 
+    <div id="modal" class="modal-bg hidden">
+      <div class="modal-content">
+         Заголовок і кнопка закриття 
+        <div class="modal-header">
+          <h2>Залиште свої дані, ми вам передзвонимо</h2>
+          <button id="closeModalBtn" class="close-btn">
+
+            &times;
+          </button>
+        </div>
+
+         Форма 
+        <form
+          id="contactForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+       Введення імені 
+          <input
+            type="hidden"
+            name="access_key"
+            value="e8d298fb-f090-4a4b-b79c-1c3030b312c4"
+          />
+
+          <div class="form-group">
+            <label for="name" class="form-label"
+              ><svg class="label-accent">
+                <use href="./img/symbol-defs.svg#name"></use>
+              </svg>
+              Ім'я</label
+            >
+            <input
+              type="text"
+              name="name"
+              required
+              id="name"
+              class="form-input"
+              minlength="2"
+            />
+          </div>
+
+      
+          <div class="form-group">
+            <label for="phone" class="form-label"
+              ><svg class="label-accent">
+                <use href="./img/symbol-defs.svg#phone1"></use>
+              </svg>
+              Телефон</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-input"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="email" class="form-label"
+              ><svg class="label-accent">
+                <use href="./img/symbol-defs.svg#mail1"></use>
+              </svg>
+              Пошта</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+              minlength="15"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="4"
+              placeholder="Ваш текст"
+              class="form-textarea"
+            ></textarea>
+          </div>
+
   
+          <div class="consent-group">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">
+              Погоджуюся з розсилкою та приймаю
+              <a href="./public-contract.docx" class="consent-link"
+                >Умови договору</a
+              >
+            </label>
+          </div>
+
+    
+          <div class="submit-btn-container">
+            <button type="submit" class="submit-btn">Відправити</button>
+          </div>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+          Дякуємо! Ваші дані успішно відправлено.
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script> -->
+    <div id="modal" class="modal-bg hidden">
+  <div class="modal-content">
+    <!-- Заголовок і кнопка закриття -->
+    <div class="modal-header">
+      <h2>Залиште свої дані, ми вам передзвонимо</h2>
+      <button id="closeModalBtn" class="close-btn">&times;</button>
+    </div>
+
+    <!-- Форма -->
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="e8d298fb-f090-4a4b-b79c-1c3030b312c4"/>
+
+      <!-- Ім'я -->
+      <div class="form-group">
+        <label for="name" class="form-label">
+          <span class="label-icon">
+            <svg>
+              <use href="/Britlex-DevCore/assets/symbol-defs-e89d588c.svg#name"></use>
+            </svg>
+          </span>
+          Ім'я
+        </label>
+        <input type="text" id="name" name="name" class="form-input" required minlength="2"/>
+      </div>
+
+      <!-- Телефон -->
+      <div class="form-group">
+        <label for="phone" class="form-label">
+          <span class="label-icon">
+            <svg>
+              <use href="/Britlex-DevCore/assets/symbol-defs-e89d588c.svg#phone1"></use>
+            </svg>
+          </span>
+          Телефон
+        </label>
+        <input type="tel" id="phone" name="phone" class="form-input" required/>
+      </div>
+
+      <!-- Пошта -->
+      <div class="form-group">
+        <label for="email" class="form-label">
+          <span class="label-icon">
+            <svg>
+              <use href="/Britlex-DevCore/assets/symbol-defs-e89d588c.svg#mail1"></use>
+            </svg>
+          </span>
+          Пошта
+        </label>
+        <input type="email" id="email" name="email" class="form-input" required minlength="15"/>
+      </div>
+
+      <!-- Коментар -->
+      <div class="form-group">
+        <label for="comment" class="form-label">Коментар</label>
+        <textarea id="comment" name="comment" class="form-textarea" rows="4" placeholder="Ваш текст"></textarea>
+      </div>
+
+      <!-- Згода -->
+      <div class="consent-group">
+        <input type="checkbox" id="consent" name="consent" required/>
+        <label for="consent">
+          Погоджуюся з розсилкою та приймаю
+          <a download href="./img/hero/CopyRaight1.pdf">Умови договору</a>
+        </label>
+      </div>
+
+      <!-- Кнопка -->
+      <div class="submit-btn-container">
+        <button type="submit" class="submit-btn">Відправити</button>
+      </div>
+    </form>
+
+    <!-- Повідомлення успіху -->
+    <div id="successMessage" class="success-message hidden">
+      Дякуємо! Ваші дані успішно відправлено.
+    </div>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
+
 
   <script defer="" src="./js/mobile-menu.js"></script>
   
