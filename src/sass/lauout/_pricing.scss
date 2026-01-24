@@ -41,10 +41,34 @@ font-size: 30px;
 line-height: 267%;
         margin-bottom: 31px;
     }
+
+            @media screen and (min-width: 992px) {
+font-size: 36px;
+line-height: 222%;  
+    }
+
+            @media screen and (min-width: 1200px) {
+font-size: 48px;
+line-height: 167%;
+    }
 }
 
 .pricing_list{
     @media screen and (min-width: 768px) {
+display: flex;
+flex-direction: row;
+        gap: 43px;
+        align-items: center;
+    }
+
+               @media screen and (min-width: 992px) {
+display: flex;
+flex-direction: row;
+        gap: 43px;
+        align-items: center;
+    }
+
+            @media screen and (min-width: 1200px) {
 display: flex;
 flex-direction: row;
         gap: 43px;
@@ -58,6 +82,14 @@ text-align: center;
     @media screen and (min-width: 768px) {
 width: 215px;
 
+    }
+
+            @media screen and (min-width: 992px) {
+width: 293px;
+    }
+
+            @media screen and (min-width: 1200px) {
+width: 382px;
     }
 }
 
@@ -92,6 +124,13 @@ font-size: 22px;
 line-height: 155%;
         padding-top: 20px;
         padding-bottom: 14px;
+    }
+
+            @media screen and (min-width: 1200px) {
+font-size: 30px;
+line-height: 160%;
+        padding-top: 40px;
+        padding-bottom: 19px;
     }
 }
 
@@ -190,6 +229,11 @@ margin-bottom: 27px;
       margin-bottom: 36px;
  
     }
+
+            @media screen and (min-width: 1200px) {
+font-size: 20px;
+margin-bottom: 29px;
+    }
 }
 
 .card_img_test{
@@ -209,8 +253,13 @@ height: 197px;
 
         @media screen and (min-width: 992px) {
 width: 222px;
-height: 222px
+height: 222px;
         
+    }
+
+            @media screen and (min-width: 1200px) {
+width: 311px;
+height: 311px;
     }
 }
 
@@ -233,6 +282,11 @@ width: 267px;
 height: 193px
         
     }
+
+            @media screen and (min-width: 1200px) {
+width: 391px;
+height: 283px;
+    }
 }
 
 .card_img_webinar{
@@ -251,9 +305,13 @@ height: 210px
     }
 
         @media screen and (min-width: 992px) {
-width: 242px;
-height: 242px
+width: 340px;
+height: 340px
         
+    }
+
+            @media screen and (min-width: 1200px) {
+
     }
 }
 
@@ -282,6 +340,12 @@ margin-bottom: 72px;
 font-size: 24px;
 margin-bottom: 140px;
     }
+
+    
+        @media screen and (min-width: 1200px) {
+font-size: 30px;
+    }
+
 }
 
 
@@ -346,6 +410,8 @@ margin-bottom: 72px;
         
     }
 
+
+
 }
 
 .price_discription{
@@ -360,15 +426,16 @@ font-size: 16px;
 
     @media screen and (min-width: 768px) {
        font-size: 16px;
-        
+    
     }
 
      @media screen and (min-width: 992px) {
-
-
 font-size: 16px;
-
     }
 
+
+     @media screen and (min-width: 1200px) {
+font-size: 18px;
+    }
 
 }
