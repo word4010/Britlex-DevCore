@@ -1,9 +1,35 @@
 @use '../utils/varriables' as *;
 
+.header {
+    padding-top: 36px;
+    padding-bottom: 44px;
+
+    @media screen and (min-width: 575px) {
+        padding-top: 39px;
+        padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 39px;
+        padding-bottom: 48px;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding-top: 30px;
+        padding-bottom: 61px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding-top: 57px;
+        padding-bottom: 80px;
+    }
+}
+
 .header_flex {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .aaa {
@@ -90,6 +116,7 @@
         font-weight: 400;
         font-size: 18px;
         color: $font-color;
+        background-color: transparent;
         border: 1px solid $border-color;
         border-radius: 7px;
         padding: 12px 40px;
@@ -102,7 +129,8 @@
         font-weight: 400;
         font-size: 24px;
         color: $font-color;
-        border: 1px solid $border-color;
+        background-color: transparent;
+        border: 2px solid $border-color;
         border-radius: 7px;
         padding: 17px 57px;
         margin-left: 30px;
