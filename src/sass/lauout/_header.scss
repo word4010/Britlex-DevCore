@@ -1,132 +1,125 @@
 @use '../utils/varriables' as *;
-.header_flex{
+
+.header_flex {
     display: flex;
     flex-direction: row;
-align-items: center;
-
+    align-items: center;
 }
 
-.aaa{
+.aaa {
     display: flex;
     flex-direction: row;
-  align-items: center;
-justify-content: space-between;
-
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header_title{
-    font-family: var(--font-family);
-font-weight: 400;
-font-size: 24px;
-color: #000;
+.header_title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 24px;
+    color: $font-color;
 
-@media screen and (min-width: 575px){ 
-font-size: 30px;
+    @media screen and (min-width: 575px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 992px) {
+        font-size: 30px;
+        padding-right: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
-@media screen and (min-width: 768px){ 
-font-size: 30px;
+.header_item {
+    @media screen and (min-width: 992px) {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        color: $accent-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 20px;
+        color: $accent-color;
+    }
 }
 
-@media screen and (min-width: 992px){ 
-font-size: 30px;
-padding-right: 70px;
-}
-
-@media screen and (min-width: 1200px){ 
-font-size: 36px;
-}
-}
-
-
-.header_item{
-
-
-        @media screen and (min-width: 992px){
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-color: #263238;
-        }
-
-        @media screen and (min-width: 1200px){
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 20px;
-color: #263238;
-
-            
-}
-}
-
-.header_list{
+.header_list {
     display: none;
 
-@media screen and (min-width: 768px){ 
-   display: none;
-}
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
-@media screen and (min-width: 992px){ 
- display: flex;  
-gap: 25px;
-}
-
-    @media screen and (min-width: 1200px){
-display: flex;
-flex-direction: row;
-text-align: center;
-align-items: center;
-margin-left: auto;
-margin-right: auto;
-gap: 40px;
-}
-}
-
-.header_button{
-    display: none;
-
-@media screen and (min-width: 768px){ 
-   display: none;
-}
-
-@media screen and (min-width: 992px){ 
- display: flex; 
-    justify-content: flex-end; 
- font-family: var(--font-family);
-font-weight: 400;
-font-size: 18px;
-color: #000;
-border: 1px solid black;
-border-radius: 7px;
-padding: 12px 40px;
-margin-left: 25px;
-}
-
-
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 992px) {
         display: flex;
-        font-family: var(--font-family);
-       font-weight: 400;
-     font-size: 24px;
-    color: #000;
-   border: 1px solid black;
-  border-radius: 7px;
- padding: 17px 57px;
-margin-left: 30px;
-}
+        gap: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 40px;
+    }
 }
 
-.current{
-    font-family: var(--font-family);
-font-weight: 400;
-font-size: 24px;
-color: #939393;
-    
-@media screen and (min-width: 768px){ 
-      font-size: 30px;
+.header_button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 992px) {
+        display: flex;
+        justify-content: flex-end;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 18px;
+        color: $font-color;
+        border: 1px solid $border-color;
+        border-radius: 7px;
+        padding: 12px 40px;
+        margin-left: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 24px;
+        color: $font-color;
+        border: 1px solid $border-color;
+        border-radius: 7px;
+        padding: 17px 57px;
+        margin-left: 30px;
+    }
 }
 
-@media screen and (min-width: 1200px){
-    font-size: 36px;
-}
+.current {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 24px;
+    color: $secondary-logo-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
