@@ -1,8 +1,7 @@
 @use '../utils/varriables' as *;
 
 .footer {
-    padding-top: 58px;
-    padding-bottom: 46px;
+    padding: 30px 0px;
 
     &::before {
         content: "";
