@@ -5,7 +5,6 @@ body.is-menu-open {
   overflow: hidden;
 }
 
-// Контейнер меню
 .menu__container {
   display: flex;
   flex-direction: column;
@@ -21,7 +20,6 @@ body.is-menu-open {
   background-color: $secondary-color;
   z-index: $menu-idx;
 
-  // Початковий стан (сховане справа)
   transform: translateX(100%);
   transition: transform $anim-fast;
 
@@ -30,7 +28,6 @@ body.is-menu-open {
   }
 }
 
-// Загальна кнопка
 .menu__toggle {
   display: flex;
   align-items: center;
@@ -46,7 +43,6 @@ body.is-menu-open {
   color: $accent-color;
 }
 
-// Кнопка "Хрестик" (позиціонування)
 .menu__container .menu__toggle {
   position: absolute;
   top: 20px;
@@ -64,14 +60,12 @@ body.is-menu-open {
 
 }
 
-// Іконка
 .menu__toggle-icon {
   fill: currentColor;
   stroke: currentColor;
   transition: fill $anim-fast;
 }
 
-// Навігація
 .menu__list--nav {
   list-style: none;
   padding: 0;
@@ -100,7 +94,6 @@ body.is-menu-open {
   }
 }
 
-// Контакти та CTA
 .menu__contacts--nav {
   list-style: none;
   padding: 0;
@@ -137,7 +130,6 @@ body.is-menu-open {
   text-align: center;
 }
 
-// Соцмережі
 .menu__list--socials {
   list-style: none;
   padding: 0;
@@ -158,7 +150,6 @@ body.is-menu-open {
   }
 }
 
-// Медіа-запит для приховування
 @media screen and (min-width: 992px) {
   .menu__toggle {
     display: none;
