@@ -1,11 +1,6 @@
 @use '../utils/varriables' as *;
 
 
-.header{
-   padding-top: 30px;
-padding-bottom: 30px;
-}
-
 .header_flex{
     display: flex;
     flex-direction: row;
@@ -19,7 +14,7 @@ padding-bottom: 30px;
 font-weight: 400;
 font-size: 24px;
 color: #000;
-=======
+
 .header {
     padding-top: 36px;
     padding-bottom: 44px;
@@ -45,6 +40,7 @@ color: #000;
         padding-bottom: 80px;
     }
 }
+}
 
 .header_flex {
     display: flex;
@@ -53,12 +49,7 @@ color: #000;
     justify-content: space-between;
 }
 
-.aaa {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .header_title {
     font-family: $font-family;
