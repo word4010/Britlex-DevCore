@@ -1,4 +1,5 @@
 @use "./base/reset.scss";
+@use "./base/common.scss";
 @use "./utils/varriables.scss";
 @use "./components/container.scss";
 @use "./components/button.scss";
@@ -11,3 +12,4 @@
 @use "./lauout/contact-us.scss";
 @use "./lauout/footer.scss";
 @use "./lauout/mob-menu.scss";
+@use "./lauout/modal.scss";

@@ -1,0 +1,7 @@
+@use '../utils/varriables' as *;
+
+body {
+    font-family: $font-family;
+    color: $font-color;
+    background: $bg-light;
+}
