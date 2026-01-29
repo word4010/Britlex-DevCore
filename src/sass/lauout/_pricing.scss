@@ -1,8 +1,23 @@
 @use '../utils/varriables' as *;
 
-.pricing_markap {
-    display: flex;
-    flex-direction: row;
+.prising-section {
+    padding: 50px 0;
+
+    @media screen and (min-width: 575px) {
+        padding: 65px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 75px 0;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding: 85px 0;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding: 95px 0;
+    }
 }
 
 .pricing_title {

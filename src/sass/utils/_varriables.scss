@@ -44,3 +44,12 @@ $font-family: "Poppins", sans-serif;
 // Animation & Index
 $anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $menu-idx: 1000;
+
+//Shadows
+$shadow-light: 0 6px 16px rgba(0, 0, 0, 0.15);
+$shadow-dark: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+//Transitions
+$translate-hover: translateY(-2px);
+$translate-active: translateY(0);
+
