@@ -1,4 +1,5 @@
 @use '../utils/varriables' as *;
+@use 'sass:color';
 
 .header {
     padding-top: 36px;
@@ -33,6 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 
@@ -41,6 +43,17 @@
     font-weight: 400;
     font-size: 24px;
     color: $font-color;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: color.adjust($font-color, $lightness: 15%);
+        transform: $translate-hover ;
+    }
+
+    &:active {
+        color: color.adjust($font-color, $lightness: 10%);
+        transform: $translate-active ;
+    }
 
     @media screen and (min-width: 575px) {
         font-size: 30px;
@@ -61,11 +74,23 @@
 }
 
 .header_item {
+    transition: all 0.3s ease;
+
     @media screen and (min-width: 992px) {
         font-family: $font-family;
         font-weight: 500;
         font-size: 16px;
         color: $accent-color;
+
+        &:hover {
+            color: color.adjust($accent-color, $lightness: 15%);
+            transform: $translate-hover;
+        }
+
+        &:active {
+            color: color.adjust($accent-color, $lightness: 10%);
+            transform: $translate-active;
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -73,6 +98,16 @@
         font-weight: 500;
         font-size: 20px;
         color: $accent-color;
+
+        &:hover {
+            color: color.adjust($accent-color, $lightness: 15%);
+            transform: $translate-hover;
+        }
+
+        &:active {
+            color: color.adjust($accent-color, $lightness: 10%);
+            transform: $translate-active;
+        }
     }
 }
 
@@ -102,10 +137,6 @@
 .header_button {
     display: none;
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-
     @media screen and (min-width: 992px) {
         display: flex;
         justify-content: flex-end;
@@ -118,6 +149,20 @@
         border-radius: 7px;
         padding: 12px 40px;
         margin-left: 25px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $border-color;
+            color: color.adjust($secondary-logo-color, $lightness: -15%);
+            transform: $translate-hover;
+            box-shadow: $shadow-light;
+        }
+
+        &:active {
+            color: color.adjust($secondary-logo-color, $lightness: -20%);
+            transform: $translate-active;
+            box-shadow: $shadow-dark;
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -131,6 +176,20 @@
         border-radius: 7px;
         padding: 17px 57px;
         margin-left: 30px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $border-color;
+            color: color.adjust($secondary-logo-color, $lightness: -15%);
+            transform: $translate-hover;
+            box-shadow: $shadow-light;
+        }
+
+        &:active {
+            color: color.adjust($secondary-logo-color, $lightness: -20%);
+            transform: $translate-active;
+            box-shadow: $shadow-dark;
+        }
     }
 }
 

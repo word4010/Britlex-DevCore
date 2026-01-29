@@ -32,7 +32,35 @@
     }
   }
 
+  &__title-wrapper {
+    position: relative;
+    display: inline-block; 
+  }
+
+  &__icon-light {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; 
+    height: 50px;
+    rotate: 38.44deg;
+    height: auto;
+    fill: currentColor;
+
+  @media (max-width: 767px) {
+      display: none; 
+    }
+
+    @media (min-width: 992px) {
+      right: 200px;
+      width: 58px;
+      height: 58px;
+    }
+  }
+
   &__title {
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: calc(24px + (34 - 24) * ((100vw - 320px) / (575 - 320)));
     line-height: calc(36px + (45 - 36) * ((100vw - 320px) / (575 - 320)));
@@ -43,8 +71,10 @@
   &__subtitle {
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (575 - 320)));
     line-height: calc(21px + (24 - 21) * ((100vw - 320px) / (575 - 320)));
-    color: var(--text-silver);
+    color: $text-muted-color;
+    font-weight: 400;
     margin-bottom: 35px;
+    width: 80%;
   }
 
   /* ===== tablet ===== */
