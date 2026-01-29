@@ -1,26 +1,21 @@
 .container {
-outline: 1px solid red;
 padding: 0 15px;
 margin: 0 auto;
 @media screen and (min-width: 320px) {
-outline: 1px solid black;
 padding: 0 14px;
 width: 290px;
 }
 @media screen and (min-width: 575px) {
-outline: 1px solid pink;
 padding: 0 15px;
 width: 530px;}
 @media screen and (min-width: 768px){
-outline: 1px solid orange;
 padding: 0 18px;
 width: 732px;}
 @media screen and (min-width: 992px) {
 padding: 0 20px;
 width: 952px;
-outline: 1px solid yellow;}
+}
 @media screen and (min-width: 1600px) {
-outline: 1px solid blue;
 padding: 0 50px;
 width: 1500px;
 }
