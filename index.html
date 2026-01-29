@@ -25,14 +25,14 @@
   <!-- Main Stylesheet -->
   
   
-  <script type="module" crossorigin src="/Britlex-DevCore/assets/index-9bb28553.js"></script>
-  <link rel="stylesheet" href="/Britlex-DevCore/assets/index-9ae96001.css">
+  <script type="module" crossorigin src="/Britlex-DevCore/assets/index-e9ab8222.js"></script>
+  <link rel="stylesheet" href="/Britlex-DevCore/assets/index-263aaf69.css">
 </head>
 
 <body>
   
   <!-- Loads the specified .html file -->
-  <section class="header">
+  <header class="header">
 
     <div class="container header_flex">
 <h1 class="header_title">Bri<span class="current">lex</span></h1>
@@ -61,14 +61,20 @@
 </svg>
 </button>
 </div>
-</section>
+</header>
   <section id="hero__section" class="hero__section section">
     <div class="hero__container container">
         <div class="hero__content hero__row">
             <div class="hero__text hero__column">
-                <h1 class="hero__title">Learn Any Foreign Language</h1>
-                <p class="hero__subtitle">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
-                <a  type="button" id="openModalBtn" class="button button--get-started">Get started</a>
+                <div class="hero__title-wrapper">
+                    <h1 class="hero__title">Learn <br>Any Foreign Language</h1>
+                    <svg class="hero__icon-light">
+                        <use href="/Britlex-DevCore/assets/symbol-defs-e89d588c.svg#icon-light"></use>
+                    </svg>
+                </div>
+                <p class="hero__subtitle">With our teachers who write a program for each student, you will be able to make your
+                    first sketch after the first lesson.</p>
+                <a type="button" id="openModalBtn" class="button button--get-started">Get started</a>
             </div>
             <div class="hero__image hero__column">
                 <img src="/Britlex-DevCore/assets/hero-bg-img-6bb22259.svg" alt="woman with laptop">
@@ -149,7 +155,7 @@
                     </div>
                 </div>
             </section>
-  <section class="pricing" id="pricing">
+  <section class="pricing prising-section" id="pricing">
   <div class="container">
     <h2 class="pricing_title">Pricing</h2>
     <ul class="pricing_list">
