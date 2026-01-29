@@ -215,8 +215,9 @@
   }
 
   .newsletter-content {
-    grid-template-columns: 1fr 1.2fr;
-    grid-template-rows: 2fr 1fr 2fr;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: auto auto auto;
     gap: 0px;
   }
 
@@ -231,21 +232,27 @@
   }
 
   .newsletter-description {
-    max-width: 100%;
     font-size: 20px;
   }
 
   .newsletter-form {
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    width: 100%;
     margin: 0 0 50px 0;
     gap: 20px;
   }
 
   .newsletter-input {
+    flex: 1;
     padding: 20px;
     font-size: 16px;
+    width: auto;
   }
 
   .newsletter-button {
+    flex-shrink: 0;
     padding: 20px 50px;
     font-size: 20px;
   }
