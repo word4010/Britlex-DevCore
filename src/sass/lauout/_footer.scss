@@ -6,7 +6,7 @@
     &::before {
         content: "";
         display: block;
-        width: 95%;
+        width: 70%;
         height: 1px;
         background-color: $border-color;
         margin: 0 auto;
@@ -20,6 +20,7 @@
     gap: 15px;
     border-top: 1px solid $border-color;
     padding-top: 20px;
+    text-align: center;
 }
 
 .footer-logo {
@@ -34,23 +35,28 @@
 }
 
 .separator {
+    font-family: $font-family;
+    font-size: 10px;
     color: $text-muted-color;
 }
 
 .footer-links {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    gap: 1px;
+    gap: 2px;
     padding: 0;
     margin: 0;
 
     a {
         font-family: $font-family;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 10px;
         color: $text-muted-color;
         text-decoration: none;
+        white-space: nowrap;
         transition: color 0.3s ease;
 
         &:hover {
@@ -82,6 +88,10 @@
             font-size: 30px;
         }
 
+        .separator {
+            font-size: 12px;
+        }
+
         .footer-links {
             display: flex;
             align-items: center;
@@ -89,6 +99,7 @@
             gap: 3px;
             padding: 0;
             margin: 0;
+
             a {
                 font-weight: 500;
                 font-size: 12px;
@@ -103,11 +114,16 @@
         padding-top: 50px;
         padding-bottom: 30px;
 
+        .separator {
+            font-size: 13px;
+        }
+
 
         .footer-links {
             gap: 5px;
             padding: 0;
             margin: 0;
+
             a {
                 font-weight: 400;
                 font-size: 13px;
@@ -127,10 +143,15 @@
         }
 
 
+        .separator {
+            font-size: 16px;
+        }
+
         .footer-links {
             gap: 3px;
             padding: 0;
             margin: 0;
+
             a {
                 font-weight: 400;
                 font-size: 16px;
@@ -155,6 +176,7 @@
 
         .footer-links {
             gap: 5px;
+
             a {
                 font-weight: 400;
                 font-size: 24px;
